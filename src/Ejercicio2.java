@@ -3,13 +3,13 @@ import javax.swing.*;
 public class Ejercicio2 {
     public static void main(String[] args) {
 
-        String contraseñaCorrecta, contraseñaIngresada;
+        String Correcta, contraseñaIngresada;
 
-        contraseñaCorrecta = JOptionPane.showInputDialog("Ingrese una contraseña segura: ");
+        Correcta = JOptionPane.showInputDialog("Ingrese una contraseña segura: ");
 
         do{
             contraseñaIngresada = JOptionPane.showInputDialog("Ingrese la contraseña: ");
-             if (contraseñaIngresada.equals(contraseñaCorrecta)){
+             if (contraseñaIngresada.equals(Correcta)){
                  JOptionPane.showMessageDialog(null, "Acceso concedido");
              }else {
                  JOptionPane.showMessageDialog(null, " Acceso denegado");
@@ -18,6 +18,6 @@ public class Ejercicio2 {
 
 
 
-        }while(!contraseñaIngresada.equals(contraseñaCorrecta));
+        }while(!contraseñaIngresada.equals(Correcta));
     }
 }
